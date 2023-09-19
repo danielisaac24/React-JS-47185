@@ -1,14 +1,26 @@
 
 import './App.css';
-import Navbar from '../src/Components/Navbar';
-import ItemListContainer from '../src/Components/ItemListContainer'; 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Navbar from './Components/Navbar';
+
+import ItemListContainer from './Components/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <ItemListContainer greeting="Bienvenidos Somos lideres en venta de lenceria para hombre y mujer....."/>
+      <BrowserRouter>
 
+        <Navbar />
+        <ItemListContainer/>
+
+        {/* <Routes>
+
+          <Route path='/' element={<ItemListContainer greeting='Este es Home donde van todos los productos' />} />
+
+        </Routes> */}
+
+      </BrowserRouter>
     </div>
   );
 }

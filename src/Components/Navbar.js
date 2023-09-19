@@ -1,28 +1,29 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import Logo from './logo'
+import {Link} from 'react-router-dom'
 const Navbar = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid d-flex justify-content-evenly">
-                    <a class="navbar-brand" href="../public/index.html"> <Logo/> </a>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../public/index.html">Inicio</a>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">  
+                <div className="container-fluid d-flex justify-content-evenly">
+                    <a className="navbar-brand" href="../public/index.html"> <Logo/> </a>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" to="">Inicio</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dec" href="../public/index.html">Hombres</a>
+                            <li className="nav-item">
+                                <Link className="nav-link text-dec" to="">Hombres</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../public/index.html">Mujeres</a>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="">Mujeres</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../public/index.html">Nosotros</a>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="">Nosotros</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../public/index.html">Contactanos</a>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="">Contactanos</Link>
                             </li>
                         </ul>
                     </div>
